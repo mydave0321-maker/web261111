@@ -64,5 +64,20 @@ function renderCards(list) {
     }
  document.getElementById("count").textContent = list.length + "편";
 }
-renderCards(movies);
+// sortBy : 영화 배열, 키 이름, 내림차순 여부 => 정렬한 새 배열
+function sortBy(list, key, desc) {
+    const copy = [...list];
+    copy.sort((a, b) => {
+        if (typeof a[key] === "string") return a[key].localeCompare(b[key]);
+        return a[key] - b[key];
+    });
+    if (desc) copy.reverse();
+    return copy;
+}
+// applySort : 선택 상자 값으로 정렬해서 다시 그리기
+function applySort() {
+    const key = document.getElementById("sort").value;
+    renderCards(sortBy(movies, key, key !== "title"));
+}
+applySort();
 
