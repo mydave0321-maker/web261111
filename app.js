@@ -42,5 +42,23 @@ function yearsSince(dateStr) {
 function posterUrl(path, size) {
     return "https://image.tmdb.org/t/p/" + size + path;
 }
+// renderCards : 영화 배열 => 보드에 카드 생성(반환값 없음)
+function renderCards(list) {
+    const board = document.querySelector(".board");
 
+    board.innerHTML = "";
+    for (const m of list) {
+        const card = document.createElement("article");
+        card.className = "card";
+        card.innerHTML = `
+            <img class="poster" src="${posterUrl(m.poster, "w342")}" alt="${m.title} 포스터">
+            <span class="badge">${m.rating}</span>
+            <div class="info">
+                <h2>${m.title}</h2>
+                <p class="year">${m.year}</p>
+            </div>`;
+        board.appendChild(card);
+    }
+}
+renderCards(movies);
 
