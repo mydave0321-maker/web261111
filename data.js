@@ -11,5 +11,7 @@ const movies = [
  rating: 7.2, poster: "	/9VIpBfup8MKmP5xFy2G9PiI8A8l.jpg" },
       { title: "더 하더 데이 폴", year: 2021, date: "2021-10-22",
  rating: 6.6, poster: "	/dv8KHbhCTqPZ1qfuf8XZRiY5a6f.jpg" },
+  { title: "	노인을 위한 나라는 없다", year: 2007, date: "2007-11-09",
+ rating: 7.9, poster: " /2SU078qZf8ZTNfl6XlqgYiQohhG.jpg" },
   
 ];
