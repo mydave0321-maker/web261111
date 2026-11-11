@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내 영화 보드</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+   <header class="top">
+  <h1>내 영화 보드</h1>
+  <nav>
+    <ul>
+      <li><a href="#board">보드</a></li>
+      <li><a href="#about">소개</a></li>
+      <li><a href="detail.html">상세</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>요즘 내가 고른 영화 다섯 편</h2>
+  <p>포스터 위에 마우스를 올려 보세요.</p>
+</section>
+    <main>
+  <section class="board" id="board">
+
+    <article class="card">
+
+        <img class="poster"
+             src="https://image.tmdb.org/t/p/w342/rrBuGu0Pjq7Y2BWSI6teGfZzviY.jpg"
+             alt="영화 히트 포스터">
+
+        <span class="badge">7.9</span>
+
+        <div class="info">
+            <h2>히트</h2>
+            <p class="year">1995</p>
+            <p class="overview">
+                강력계 형사 빈센트 한나와 냉철한 전문 범죄자 닐 맥컬리가
+                서로를 추적하며 벌이는 범죄 드라마.
+            </p>
+        </div>
+
+    </article>
+       <article class="card">
+
+        <img class="poster"
+             src="https://image.tmdb.org/t/p/w342/dv8KHbhCTqPZ1qfuf8XZRiY5a6f.jpg"
+             alt="영화 더 하더 데이 폴 포스터">
+
+        <span class="badge">6.6</span>
+
+        <div class="info">
+            <h2> 더 하더 데이 폴</h2>
+            <p class="year">2021</p>
+            <p class="overview">
+                황야의 무법자 냇 러브(조너선 메이저스)는 숙적 루퍼스 벅(이드리스 엘바)이 출소한다는 소식에 흩어졌던 팀을 불러 모아 미뤄뒀던 복수를 다시 시작한다.
+            </p>
+        </div>
+
+    </article>
+       <article class="card">
+
+        <img class="poster"
+             src="https://image.tmdb.org/t/p/w342/izzk8dbmrLowcoGbFaebqJvzyXg.jpg"
+             alt="영화 세븐 포스터">
+
+        <span class="badge">8.4</span>
+
+        <div class="info">
+            <h2>세븐</h2>
+            <p class="year">1995</p>
+            <p class="overview">
+                은퇴를 7일 앞둔 관록의 형사 윌리엄 소머셋(모건 프리먼)과 새로 전근 온 신참내기 형사 밀스(브래드 피트)가 팀이 된 바로 다음날, 
+                강압에 의해 위가 찢어질 때까지 먹다가 죽은 초고도 비만 남자와 역시 강압에 의해 식칼로 자기 살을 베어내 죽은 악덕 변호사의 사건과 마주한다.
+            </p>
+        </div>
+
+    </article>
+       <article class="card">
+
+        <img class="poster"
+             src="https://image.tmdb.org/t/p/w342/eKZ07Ted7VHxQjbuZrRBFOamcKJ.jpg"
+             alt="영화 파이트 클럽 포스터">
+
+        <span class="badge">8.4</span>
+
+        <div class="info">
+            <h2>파이트 클럽</h2>
+            <p class="year">1999</p>
+            <p class="overview">
+               자동차 회사의 리콜 심사관으로 일하는 주인공은 일상의 무료함과 공허함 속에서 늘 새로운 탈출을 꿈꾼다.
+            </p>
+        </div>
+
+    </article>
+       <article class="card">
+
+        <img class="poster"
+             src="https://image.tmdb.org/t/p/w342/9VIpBfup8MKmP5xFy2G9PiI8A8l.jpg"
+             alt="영화 콜래트럴 포스터">
+
+        <span class="badge">7.2</span>
+
+        <div class="info">
+            <h2>콜래트럴</h2>
+            <p class="year">2004</p>
+            <p class="overview">
+                평범한 LA의 택시 운전사 맥스(제이미 폭스)는 돈을 모아 리무진 렌탈업을 하겠다는 소박한 꿈을 갖고 살고 있다.
+            </p>
+        </div>
+
+    </article>
+       </section>
+
+  <section id="about">
+    <h2>이 보드에 대하여</h2>
+    <p>김민재가 만든 영화 보드입니다. 긴장감 있는 전개와 인상적인 인물이 등장하는 범죄·스릴러 영화를 골랐습니다.</p>
+    <p>포스터와 영화 정보는 TMDB 검색 결과를 그대로 옮겼습니다.</p>
+  </section>
+</main>
+
+    <footer>
+        <p>
+            이 사이트는 TMDB API를 사용하지만 TMDB의 보증이나 인증을 받지 않았습니다.<br>
+            This product uses the TMDB API but is not endorsed or certified by TMDB.
+        </p>
+        <p>포스터와 영화 정보: TMDB (https://www.themoviedb.org)</p>
+    </footer>
+
+</body>
+</html>
